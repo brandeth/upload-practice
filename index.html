@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Types and Variables</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/material_colors.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						## Data Types, Variables and Arrays
+
+						<span class="cyan-text">A lecture made for non-I.T. learners</span>
+					</script>
+				</section>
+
+				<section data-transition="slide" data-background="#fff" data-background-transition="zoom">
+					<h2>What <i>is</i> Data?</h2>
+					<p class="fragment fade-up">
+						<i class="green-text">Data</i> is information that we store in our computer programs.
+					</p>
+					<ul>
+						<li class="fragment fade-up">Your <i class="pink-text">Name</i> is a piece of data.</li>
+						<li class="fragment fade-up">So as your <i class="pink-text">Age</i></li>
+						<li class="fragment fade-up">The <i class="pink-text">Color</i> of your hair</li>
+						<li class="fragment fade-up"><i class="pink-text">How many</i> siblings or friends you have.</li>
+					</ul>
+				</section>
+
+				<section data-background="#E57373" data-transition="slide" data-background-transition="zoom">
+					<p class="white-text">These things are all <i class="yellow-text">Data</i></p>
+				</section>
+
+				<section data-background="#333" data-transition="slide" data-background-transition="zoom">
+					<h1 class="cyan-text">Javascript</h1>
+				</section>
+
+				<section class="purple">
+					<section>
+						<h2>Brief Overview</h2>
+						<p class="fragment fade-up">JavaScript Programming language is used to write programs that run in web pages.</p>
+						<ul>
+							<li class="fragment fade-up"><i class="orange-text">Control</i> how a webpage looks</li>
+							<li class="fragment fade-up">Make the page <i class="orange-text">respond</i> when a viewer clicks a button or moves the mouse.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Websites that use JavaScript</h3>
+						<ul>
+							<li class="fragment fade-up"><i class="fa fa-envelope"></i> Gmail</li>
+							<li class="fragment fade-up"><i class="blue-text fa fa-facebook-square"></i> Facebook</li>
+							<li class="fragment fade-up"><i class="cyan-text fa fa-twitter-square"></i> Twitter</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#00bcd4" data-transition="slide" data-background-transition="zoom">
+					<h3 class="white-text">Why Javascript is so exciting</h3>
+					<ul>
+							<li class="fragment white-text">Play Music</li>
+							<li class="fragment white-text">Create amazing visual effects.</li>
+							<li class="fragment white-text">Build tools to make art.</li>
+						</ul>
+				</section>
+
+				<section data-background="#81d4fa" data-transition="slide" data-background-transition="zoom">
+					<section>
+					<h3>Three Basic types of Data</h3>
+						<ul>
+							<li class="fragment fade-up">Numbers</li>
+							<li class="fragment fade-up">Strings</li>
+							<li class="fragment current-visible">Booleans</li>
+							<span class="fragment"></span>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Numbers</h3>
+						<ul>
+							<li class="fragment fade-up"><i class="red-text">Age</i> can be represented as a number.</li>
+							<li class="fragment fade-up">So is your <i class="red-text">height</i></li>
+						</ul>
+					</section>
+
+					<section>
+						<p>Numbers in JavaScript look like this:</p>
+						<code class="fragment left-align hljs">420;</code>
+						<code class="fragment left-align hljs hljs">5 + 5;<br><span class="blue-text">10</span></code>
+						<code class="fragment left-align hljs hljs">1024;</code>
+					</section>
+
+					<section>
+						<h3>Strings</h3>
+						<p class="fragment fade-up">Strings are used to represent text.</p>
+						<ul>
+							<li class="fragment fade-up">The <i class="pink-text">name</i> of your crush can be represented as a string</li>
+							<li class="fragment fade-up">Your <i class="pink-text">E-mail Address</i></li>
+							<li class="fragment fade-up">Your <i class="pink-text">favorite progamming language</i></li>
+						</ul>						
+					</section>
+
+					<section>
+						<p>Strings look like this:</p>
+						<code class="hljs fragment left-align">"Luke, I am your father.";</code>
+						<code class="hljs fragment left-align">"Nooooooo!";</code>
+					</section>
+
+					<section>
+						<p>More code samples</p>
+						<pre class="fragment fade-up"><code class="hljs">99 * 123;</code><code>"Live long and prosper";</code></pre>
+						<p class="fragment fade-up red-text">NOTE: Semicolons(;) mark the end of a particular JavaScript command or instruction.</p>
+					</section>
+
+					<section>
+						<h3>Numbers and Operators</h3>
+						<p class="fragment fade-down">In JavaScript, you can also perform basic mathematical operations like <span class="fragment">Addition,</span> <span class="fragment">Subtraction,</span> <span class="fragment">Multiplication,</span> <span class="fragment">and Division.</span></p>
+					</section>
+
+					<section>
+						<h3>Examples</h3>
+						<p class="fragment">Addition</p>
+						<pre class="fragment"><code class="hljs">400 + 20;</code></pre>
+						<p class="fragment">You can also add multiple numbers</p>
+						<pre class="fragment"><code class="hljs">22 + 33 + 44;</code></pre>
+						<p class="fragment">JavaScript can also do subtraction...</p>
+						<pre class="fragment"><code class="hljs">1000 - 17;</code></pre>
+						<p class="fragment">
+							Perform multiplication, using an asterisk(*)...
+						</p>
+						<pre class="fragment"><code>123 * 456;</code></pre>
+					</section>
+
+					<section>
+						<p>Division, using forward slash</p>
+						<pre class="fragment"><code>12345 / 250;</code></pre>
+
+						<p class="fragment">You can also combine these simple operations to make something more complex, like this:</p>
+						<pre class="fragment"><code>1234 + 57 * 3 - 31 / 4;</code></pre>
+					</section>
+
+					<section>
+						<p>What if you want to do addition and subtraction first, before doing multiplication and division?</p>
+					</section>
+
+					<section>
+						<p>
+							Say you have 1 brother, 3 sisters and 8 candies. You want to split the candies equally among your 4 siblings. (You have already taken your share.) You have to divide 8 by your number of siblings.
+						</p>
+						<pre class="fragment"><code class="hljs">8 / 1 + 3;</code></pre>
+						<p class="red-text fragment">This is not right!</p>
+						<pre class="fragment"><code class="hljs">8 / (1 + 3);</code></pre>
+						<p class="fragment">Now that is better. You provide 2 candies to each your siblings.</p>
+						<p class="fragment">Take note that the <i class="red-text">parentheses</i>() forces JavaScript to add 1 and 3 <i class="red-text">before</i> dividing 8 by 4.</p>
+					</section>
+				</section>
+
+				<section data-background="#aeea00" data-transition="slide" data-background-transition="zoom">
+					<h3>Variables</h3>
+					<p class="fragment">Javascript lets you give names to values using <i class="red-text">variables</i>.</p>
+					<p class="fragment">To create a variable, we use the keyword <code class="red-text">var</code></p>
+					<p class="fragment">JavaScript knows that we are about to enter the name of a new variable.</p>
+					<code class="fragment hljs left-align"><span class="orange-text">var</span> pogi;</code>
+				</section>
+
+				<section>
+					<section>
+						<h3>Review</h3>
+						<p class="fragment">Strings and numbers alone return a value.</p>
+						<code class="fragment hljs left-align">1 + 2 + 3 + 4 * 5 / 20 - 7;</code>
+						<code class="fragment hljs left-align blue-text">0</code>
+						<p class="fragment">Creating a variable in JavaScript does not return a value.</p>
+						<code class="fragment left-align hljs"><span class="orange-text">var</span> forever;</code>
+						<code class="fragment hljs left-align blue-text">undefined</code>
+						<p class="fragment"><span class="red-text">Note</span>: JavaScript will output <code class="red-text">undefined</code> whenever a command doesn't return a value.</p>
+					</section>
+				</section>
+
+				<section data-background="#e91e63">
+					<h3>Giving a value to a variable</h3>
+					<code class="hljs fragment left-align">
+						<span class="fragment orange-text">var</span> <span class="fragment">age</span> <span class="fragment">=</span> <span class="fragment">20;</span>
+						<br>
+						<span class="fragment">undefined</span>
+					</code>
+					<p class="fragment"><span class="orange-text">Note</span>: Setting a value is called <i>assignment</i>.</p>
+					<code class="fragment hljs left-align">
+						<span class="fragment">age;</span>
+						<br>
+						<span class="fragment blue-text">20</span>
+					</code>
+				</section>
+
+				<section>
+					<section>
+						<h3>Remember</h3>
+						<p class="fragment">Variables can <i>vary</i>.</p>
+						<p class="fragment">If we want to update it, we just use <code>=</code> again.</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment">age = 13;</span><br>
+							<span class="fragment blue-text">13</span>
+						</code>
+						<p class="fragment"><span>Note</span>: We need to use <code>var</code> only when we want to <i>create</i> a variable.</p>
+					</section>
+
+					<section>
+						<h3>The Candy Problem (Revisited)</h3>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> numberOfSiblings = 1 + 3;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> numberOfCandies = 8;</span><br>
+							<span class="fragment">numberOfCandies / numberOfSiblings;</span><br>
+							<span class="fragment blue-text">2</span>
+						</code>
+					</section>
+				</section>
+
+				<section data-background="#ff9800">
+					<section
+						<h3>Naming Variables</h3>
+						<p class="fragment white-text"><span class="white-text">Note:</span> Be careful with naming variables.</p>
+						<ul>
+							<li class="fragment">Easy to <i>misspell</i></li>
+							<li class="fragment">Capitalization</li>
+						</ul>
+						<p class="fragment">Let's say, we accidentally used a lowercase <i>c</i> in <code>numberOfCandies</code></p>
+						<code class="fragment left-align hljs">
+							<span class="fragment">numberOfcandies / numberOfSiblings;</span><br>
+							<span class="fragment red-text">ReferenceError: numberOfcandies is not defined</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>The Tricky Parts</h3>
+						<p class="fragment">Unfortunately, JavaScript will only do exactly what you ask it to do.</p>
+						<p class="fragment">Variable names in JavaScript <strong>CANNOT</strong> contain spaces.</p>
+						<code class="fragment hljs left-align">number of candies<br>numberofcandies</code>
+					</section>
+
+					<section>
+						<h3>The <i>Camelcase</i></h3>
+						<p class="fragment">One common way to get around this is to start each word with a capital letter:</p>
+						<code class="fragment hljs left-align">numberOfCandies</code>
+						<p class="fragment">In standard practice, it is common for variables to start with a lowercase letter.</p>
+						<p class="fragment">After that, capitalize each word except for the first one</p>
+					</section>
+
+					<section>
+						<h3>Let's Practice Variables and Numbers!</h3>
+					</section>
+
+					<section>
+						<h3>Seconds in an hour</h3>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> secondsInAMinute = 60;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> minutesInAnHour = 60;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> secondsInAnHour = secondsInAMinute * minutesInAnHour;</span><br>
+							<span class="fragment">secondsInAnHour;</span><br>
+							<span class="fragment blue-text">3600</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Seconds in a day</h3>
+						<code class="hljs fragment left-align">
+							<span class="fragment"><span class="orange-text">var</span> hoursInADay = 24;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> secondsInADay = secondsInAnHour * hoursInADay;</span><br>
+							<span class="fragment">secondsInADay;</span><br>
+							<span class="fragment blue-text">86400</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Seconds in a year</h3>
+						<code class="hljs fragment left-align">
+							<span class="fragment"><span class="orange-text">var</span> daysInAYear = 365;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> secondsInAYear = secondsInADay * daysInAYear;</span><br>
+							<span class="fragment">secondsInAYear;</span><br>
+							<span class="fragment blue-text">31536000</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Age in seconds</h3>
+						<code class="hljs fragment left-align">
+							<span class="fragment"><span class="orange-text">var</span> age = 29;</span><br>
+							<span class="fragment"><span>age * secondsInAYear;</span><br>
+							<span class="fragment blue-text">914544000</span>
+						</code>
+					</section>
+				</section>
+
+				<section data-background="#e91e63">
+					<section>
+						<h3>Strings</h3>
+					</section>
+
+					<section>
+						<p>Strings in JavaScript (as in most programming languages) are just sequences of characters, which can include:</p>
+						<ul>
+							<li class="fragment">Letters</li>
+							<li class="fragment">Numbers</li>
+							<li class="fragment">Punctuations</li>
+							<li class="fragment">Spaces</li>
+						</ul>
+					</section>
+
+					<section>
+						<p>We put strings between quotes("") so JavaScript knows where they start and end.</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment">"Hello, Crush!";</span><br>
+							<span class="fragment blue-text">Hello, Crush!</span><br>
+						</code>
+						<p class="fragment">We can also put strings in between single quotes('')</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment">'...';</span><br>
+							<span class="fragment blue-text">...</span>
+						</code>
+					</section>
+
+					<section>
+						<p>We can also save strings into variables, just like numbers:</p>
+						<code class="hljs fragment left-align">
+							<span class="orange-text">var</span> myName = "Papa J";
+						</code>
+						<p class="fragment">We can also assign a string to a variable that previously contained a number or a string:</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> something = 5;</span><br>
+							<span class="fragment">something = "special";</span><br>
+							<span class="fragment blue-text">"special"</span>
+						</code>
+					</section>
+
+					<section>
+						<p>What if we put a number between quotes? <span class="fragment">Is it a  string</span> <span class="fragment">or a number?</span></p>
+					</section>
+
+					<section>
+						<code class="hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> numberNine = 9;</span><br>
+							<span class="fragment"><span class="orange-text">var</span> stringNine = "9";</span><br>
+							<span class="fragment">numberNine + numberNine;</span><br>
+							<span class="fragment blue-text">18</span><br>
+							<span class="fragment">stringNine + stringNine;</span><br>
+							<span class="fragment blue-text">"99"</span>
+						</code>
+						<p class="fragment">When we add the number values of two nines(9), we get 18.</p>
+						<p class="fragment">However, when we use the operator "+" on two strings of nines(9), the strings are simply joined together to form "99"</p>
+					</section>
+
+					<section>
+						<p>What if we add a string and a number?</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment">stringNine + numberNine;</span><br>
+							<span class="fragment">"99"</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Type Coercion</h3>
+						<p class="fragment">Converting a value from one data type to another.</p>
+						<p class="fragment">This happens quite often in JavaScript because it's dynamically typed.</p>
+					</section>
+
+					<section>
+						<h3>Joining Strings</h3>
+						<p class="fragment">We can use the "+" operator with strings, but the result is very different from using the "+" with numbers.</p>
+						<p class="fragment">When we use "+" to join two strings, we make a new string with the second string attached to the end of the first string:</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> greeting = "Hello";</span><br>
+							<span class="fragment"><span class="orange-text">var</span> myName = "Sef";</span><br>
+							<span class="fragment">greeting + myName;</span><br>
+							<span class="fragment blue-text">"HelloSef"</span>
+						</code>
+					</section>
+
+					<section>
+						<p>Note: Javascript does not automatically put a space unless we specifically tell it to by adding a space in one of the original strings:</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> greeting = "Hello ";</span><br>
+							<span class="fragment"><span class="orange-text">var</span> myName = "Sef";</span><br>
+							<span class="fragment">greeting + myName;</span><br>
+							<span class="fragment blue-text">"Hello Sef"</span>
+						</code>
+						<code class="fragment hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> greeting = "Hello";</span><br>
+							<span class="fragment"><span class="orange-text">var</span> myName = "Sef";</span><br>
+							<span class="fragment">greeting + " " + myName;</span><br>
+							<span class="fragment blue-text">"Hello Sef"</span>
+						</code>
+					</section>
+				</section>
+
+				<section data-background="#e0e0e0">
+					<section>
+						<h3>Arrays</h3>
+					</section>
+
+					<section>
+						<p>An <i class="pink-text">array</i> is a list of other JavaScript data values.</p>
+						<p class="fragment">JavaScript lets us create and group together data in more interesting ways with <i class="pink-text">arrays</i></p>
+					</section>
+
+					<section>
+						<p>Say, you and your crush are talking about your top three(3) favorite foods.</p>
+						<p class="fragment">You could create an <i class="pink-text">array</i> consisiting your top favorite foods, in order:</p>
+						<code class="fragment hljs left-align">
+							<span class="orange-text">var</span> myTopThreeFavoriteFoods = ["Pizza", "Sinigang", "Kare-Kare"];
+						</code>
+						<p class="fragment">So, instead of giving your crush three seperate strings, you can just us the single array <code class="blue-text">myTopThreeFavoriteFoods</code>.</p>
+					</section>
+
+					<section>
+						<h3>Why should we care about arrays?</h3>
+					</section>
+
+					<section>
+						<p>Let's look at a different example, <i class="fragment orange-text">Pokemons.</i></p>
+						<p class="fragment">Say you want to use a program to keep track of the many kinds of Pokemons you know about. You could create a variable for each pokemons, like this:</p>
+						<code class="fragment hljs left-align">
+							<span><span class="orange-text">var</span> pokemon1 = "Bulbasuar";</span><br>
+							<span><span class="orange-text">var</span> pokemon2 = "Squirtle";</span><br>
+							<span><span class="orange-text">var</span> pokemon3 = "Charmander";</span><br>
+							<span><span class="orange-text">var</span> pokemon4 = "Caterpie";</span><br>
+							<span><span class="orange-text">var</span> pokemon5 = "Weedle";</span><br>
+							<span><span class="orange-text">var</span> pokemon6 = "Rattata";</span><br>
+							<span><span class="orange-text">var</span> pokemon7 = "Slowpoke";</span><br>
+						</code>
+					</section>
+
+					<section>
+						<h3>Imagine a shopping list</h3>
+					</section>
+
+					<section>Eggs</section>
+					<section>Bread</section>
+					<section>Milk</section>
+
+					<section>
+						<h3>Creating an Array</h3>
+					</section>
+
+					<section>
+						<p>To create an array, we just use square brackets, [].</p>
+						<p class="fragment">In fact, an <i class="pink-text">empty array</i> is simply a pair of square brackets, like this:</p>
+						<code class="fragment hljs left-align">
+							[];<br>
+							<span class="blue-text">[]</span>
+						</code>
+					</section>
+
+					<section>
+						<p>Let's create an array of Pokemons</p>
+					</section>
+
+					<section>
+						<code class="hljs left-align">
+							<span class="fragment">var pokemons = ["Bulbasaur", "Squirtle", "Charmander", "Caterpie", "Weedle", "Rattata", "Slowpoke"];</span>
+						</code>
+					</section>
+
+					<section>
+						<code class="hljs left-align">
+							<span class="fragment"><span class="orange-text">var</span> pokemons = ["Bulbasaur",<br><span>&nbsp;&nbsp;</span>"Squirtle",<br> <span>&nbsp;&nbsp;</span>"Charmander",<br> <span>&nbsp;&nbsp;</span>"Caterpie",<br> <span>&nbsp;&nbsp;</span>"Weedle",<br> <span>&nbsp;&nbsp;</span>"Rattata",<br> <span>&nbsp;&nbsp;</span>"Slowpoke"<br>];</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Accessing an array's elements</h3>
+					</section>
+
+					<section>
+						<p>When it's time to access elements in an array, we use square brackets with the <i class="pink-text">index</i> of the element we want:</p>
+						<code class="fragment hljs left-align">
+							<span class="fragment">pokemons[0];</span><br>
+							<span class="fragment orange-text">"Bulbasaur"</span><br>
+							<span class="fragment">pokemons[2];</span><br>
+							<span class="fragment orange-text">"Charmander"</span>
+						</code>
+						<p class="pink-text fragment">Note: An <i>index</i> is the number that corresponds to the spot in the array where a value is stored.</p>
+					</section>
+
+					<section>
+						<p class="pink-text">Note: The first element in an array is at <span class="orange-text">index 0</span>, the second is at <span class="orange-text">index 1</span>, the third at <span class="orange-text">index 2</span>, ans so on.</p>
+						<code class="fragment hljs left-align">
+							<span>pokemons[0];</span><br>
+							<span class="orange-text">"Bulbasaur"</span><br>
+							<span>pokemons[2];</span><br>
+							<span class="orange-text">"Charmander"</span>
+						</code>
+					</section>
+
+					<section>
+						<h3>Setting or changing elements in an array</h3>
+					</section>
+
+					<section>
+						<p>We can use indexes in square brackets to set, change , or even add elements to an array. Let's replace the first element in our <code>pokemons</code> array ("Bulbasaur") with "Ivysaur":</p>
+						<code class="fragment hljs left-align">
+							pokemons[0] = "Ivysaur";
+						</code>
+					</section>
+
+					<section>
+						<code class="hljs left-align">
+							var pokemons = [];<br>
+							pokemons[0] = "Bulbasaur";<br>
+							pokemons[1] = "Squirtle";<br>
+							pokemons[2] = "Charmander";<br>
+							pokemons[3] = "Caterpie";<br>
+							pokemons[4] = "Weedle";<br>
+							pokemons[5] = "Rattata";<br>
+							pokemons[6] = "Slowpoke";<br>
+						</code>
+					</section>
+				</section>
+
+				<section data-background="#4285f4">
+					<h3>Summary</h3>
+					<ul>
+						<li class="fragment">Data</li>
+						<li class="fragment">Numbers and Strings</li>
+						<li class="fragment">Variables</li>
+						<li class="fragment">Arrays</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="cyan-text">End of Lecture</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
